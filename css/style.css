@@ -1,0 +1,88 @@
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+body,
+html {
+  box-sizing: border-box;
+  padding: 0px;
+  margin: 0px;
+  font-family: "Permanent Marker", cursive;
+}
+
+body {
+  background-image: url(https://i.imgur.com/b9r5sEL.jpg);
+  background-attachment: fixed;
+  background-position: center;
+  background-size: cover;
+}
+
+.drum-machine {
+  border: 1px solid gray;
+  border-radius: 15px;
+  background-color: rgba(0, 0, 0, 0.3);
+  margin-top: 40vh;
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 1450px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.drum-pad-set {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-around;
+}
+.drum-pad-set .drum-pad {
+  border-radius: 15px;
+  border: 1px solid #333;
+  box-shadow: 0 0px 15px rgba(0, 0, 0, 0.5);
+  background-color: rgba(0, 0, 0, 0.7);
+  width: 5.5rem;
+  height: 5.5rem;
+  margin: 4px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  transition: 60ms;
+}
+.drum-pad-set .drum-pad p {
+  color: white;
+  font-size: 2.2rem;
+  margin: 5px;
+}
+.drum-pad-set .drum-pad span {
+  color: #FFED46;
+  font-family: "Bebas Neue", cursive;
+  font-size: 1rem;
+}
+.drum-pad-set .drum-pad-pressed {
+  transform: scale(1.1);
+  box-shadow: 0 0px 5px #ffed46;
+  border: 1px solid #FFED46;
+}
+
+.display {
+  border-radius: 15px;
+  border: 1px solid #333;
+  background-color: rgba(0, 0, 0, 0.7);
+  width: 10rem;
+  height: 3rem;
+  margin-top: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.display #display {
+  color: #FFED46;
+  font-family: "Permanent Marker", cursive;
+  font-size: 1.5rem;
+}
+
+/*# sourceMappingURL=style.css.map */
